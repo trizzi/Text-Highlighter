@@ -10,15 +10,16 @@ const Highlight = ({ sentence, word, show }) => {
         {parts.map((part, i) => (
           <span
             key={i}
-            style={{
-              fontWeight: 'bold',
-              color: '#000',
-              textTransform: 'uppercase',
-            }}>
-            if(part.toLowerCase() === word.toLowerCase())
-            {<div>{part}</div>}else if ( part.toLowerCase()
-            !== word.toLowerCase())
-            {alert('Cannot highlight word in sentence')}
+            style={
+              part.toLowerCase() === word.toLowerCase()
+                ? {
+                    fontWeight: 'bold',
+                    color: '#FFFF00',
+                    textTransform: 'uppercase',
+                  }
+                : {}
+            }>
+            {part}
           </span>
         ))}
       </span>
@@ -27,7 +28,7 @@ const Highlight = ({ sentence, word, show }) => {
 
   return (
     show && (
-      <div>
+      <div className='highlighted-text'>
         <h3>{sentence}</h3>
         {getHighlightedText(sentence, word)}
       </div>
@@ -37,13 +38,7 @@ const Highlight = ({ sentence, word, show }) => {
 
 export default Highlight;
 
-// part.toLowerCase() === word.toLowerCase()
-// ? {
-//     fontWeight: 'bold',
-//     color: '#FFFF00',
-//     textTransform: 'uppercase',
-//   }
-// : {
-//   part.toLowerCase() !== word.toLowerCase(){
-//   alert("Cannot highlight word in sentence")
-// }}
+// if(part.toLowerCase() === word.toLowerCase())
+// {<div>{part}</div>}else if ( part.toLowerCase()
+// !== word.toLowerCase())
+// {alert('Cannot highlight word in sentence')}

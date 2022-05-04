@@ -18,9 +18,10 @@ const Search = ({ setSentence, setWord, onHighlight }) => {
   };
 
   return (
-    <form data-testid='search'>
+    <form data-testid='search' className='form'>
       <input
         type='text'
+        className='input-1'
         placeholder='Type a sentence (max 100)'
         maxLength='100'
         required
@@ -29,14 +30,11 @@ const Search = ({ setSentence, setWord, onHighlight }) => {
       <input
         type='text'
         required
+        className='input-2'
         placeholder='Type a word to highlight it'
         onChange={onWordChange}
       />
-      <Button
-        color='blue'
-        text='Highlight'
-        onClick={onClick}
-      />
+      <Button text='Highlight' onClick={onClick} />
     </form>
   );
 };
@@ -48,3 +46,14 @@ Search.protoType = {
 };
 
 export default Search;
+
+// toggleEl.addEventListener('click', (e) => {
+//     const html = document.querySelector('html');
+//     if (html.classList.contains('dark')) {
+//       html.classList.remove('dark');
+//       e.target.innerHTML = 'Dark Mode';
+//     } else {
+//       html.classList.add('dark');
+//       e.target.innerHTML = 'Light Mode ';
+//     }
+//   });

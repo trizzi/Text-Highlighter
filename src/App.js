@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <div className='App' data-testid='app'>
+    <div className={`app app-light`} data-testid='app'>
       <Search
         setSentence={setSentence}
         setWord={setWord}

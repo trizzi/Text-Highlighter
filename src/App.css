@@ -1,75 +1,135 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --primary-color: #000;
-    --secondary-color: #fff;
-  }
-  html.dark {
-    --primary-color: #fff;
-    --secondary-color: #333;
-  }
-  html.dark {
-    background-color: #000;
-    color: var(--primary-color);
-  }
-  
-  html {
-    transition: all 0.5s ease-in;
-  }
-  
-  body {
-    font-family: 'Heebo', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .form{
-      margin: 0 2rem;
-  }
+.app-dark {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
-  input {
-    background: rgba(0, 0, 0, 0.3);
-    border: 0;
-    border-radius: 20px;
-    margin-top: 1rem;
-    color: #fff;
-    font-size: 14px;
-    padding: 10px 15px;
-    width: 100%;
-  }
-  
-  .btn {
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    margin: 1rem 7rem;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btn:focus {
-    outline: none;
-  }
+.app-dark body {
+  font-family: 'Heebo', sans-serif;
+}
 
-  .highlighted-text{
-      margin: 5rem 2rem;
-  }
+.app-dark h1 {
+  text-align: center;
+}
 
-  @media only screen and (min-width: 600px){
-      .btn{
-          margin: 1rem 9.5rem;
-      }
+.app-dark .form {
+  margin: 0 2rem;
+}
+
+.app-dark input {
+  background: #b8b6b6;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 1rem;
+  color: #000;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.app-dark .btn {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 1rem 7rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-dark .btn:focus {
+  outline: none;
+}
+
+.app-dark .highlighted-text {
+  margin: 5rem 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .app-dark .btn {
+    margin: 1rem 9.5rem;
   }
-  
-  
+}
+
+.app-light {
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app-light body {
+  font-family: 'Heebo', sans-serif;
+}
+
+.app-light h1 {
+  text-align: center;
+}
+
+.app-light .form {
+  margin: 0 2rem;
+}
+
+.app-light input {
+  background: rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 20px;
+  margin-top: 1rem;
+  color: #000;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.app-light .btn {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 1rem 7rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-light .btn:focus {
+  outline: none;
+}
+
+.app-light .highlighted-text {
+  margin: 5rem 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .app-light .btn {
+    margin: 1rem 9.5rem;
+  }
+}
+
+.app {
+  transition: all 0.5s ease-in;
+}

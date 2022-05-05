@@ -9,5 +9,5 @@ afterEach(cleanup);
 test('should render button component', () => {
   const { getByTestId } = render(<Button />);
   fireEvent.click(getByTestId('click'));
-  expect(getByTestId('click')).not.toBeFalsy;
+  expect(getByTestId('click')).not.toBeFalsy();
 });

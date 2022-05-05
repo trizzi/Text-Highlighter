@@ -7,6 +7,7 @@ function App() {
   const [sentence, setSentence] = useState('');
   const [word, setWord] = useState('');
   const [show, setShow] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
     if (sentence === '') {
@@ -22,10 +23,13 @@ function App() {
 
   const onHighlight = () => {
     setShow(true);
+    setDarkTheme(true);
   };
 
   return (
-    <div className={`app app-light`} data-testid='app'>
+    <div
+      className={`app app-${darkTheme ? 'dark' : 'light'}`}
+      data-testid='app'>
       <Search
         setSentence={setSentence}
         setWord={setWord}

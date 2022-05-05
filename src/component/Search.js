@@ -19,6 +19,7 @@ const Search = ({ setSentence, setWord, onHighlight }) => {
   };
 
   return (
+
     <Fragment>
       <h1>Text Highlighter</h1>
       <form data-testid='search' className='form'>
@@ -40,6 +41,7 @@ const Search = ({ setSentence, setWord, onHighlight }) => {
         <Button text='Highlight' onClick={onClick} />
       </form>
     </Fragment>
+
   );
 };
 

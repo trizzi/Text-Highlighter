@@ -15,12 +15,6 @@ function App() {
     }
   }, [sentence]);
 
-  // useEffect(() => {
-  //   if (!!sentence) {
-  //     setShow(false);
-  //   }
-  // }, [sentence]);
-
   const onHighlight = () => {
     setShow(true);
     setDarkTheme(true);

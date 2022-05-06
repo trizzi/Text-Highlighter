@@ -6,7 +6,7 @@ import {
 import Button from '../Button';
 afterEach(cleanup);
 
-test('should render button component', () => {
+test('should render button without crashing', () => {
   const { getByTestId } = render(<Button />);
   fireEvent.click(getByTestId('click'));
   expect(getByTestId('click')).not.toBeFalsy();

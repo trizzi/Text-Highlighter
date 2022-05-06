@@ -19,7 +19,6 @@ const Search = ({ setSentence, setWord, onHighlight }) => {
   };
 
   return (
-
     <Fragment>
       <h1>Text Highlighter</h1>
       <form data-testid='search' className='form'>
@@ -41,7 +40,6 @@ const Search = ({ setSentence, setWord, onHighlight }) => {
         <Button text='Highlight' onClick={onClick} />
       </form>
     </Fragment>
-
   );
 };
 
@@ -52,14 +50,3 @@ Search.protoType = {
 };
 
 export default Search;
-
-// toggleEl.addEventListener('click', (e) => {
-//     const html = document.querySelector('html');
-//     if (html.classList.contains('dark')) {
-//       html.classList.remove('dark');
-//       e.target.innerHTML = 'Dark Mode';
-//     } else {
-//       html.classList.add('dark');
-//       e.target.innerHTML = 'Light Mode ';
-//     }
-//   });

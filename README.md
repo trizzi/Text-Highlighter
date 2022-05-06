@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/trizzi/Text-Highlighter/workflows/React/badge.svg)](https://github.com/trizzi/Text-Highlighter/actions)
+
 # Table Of Content
 * Project Title
 * Project Description

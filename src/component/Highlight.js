@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-const splitSentence = (sentence, word) =>
-  sentence.split(new RegExp(`(${word})`, 'gi'));
+const splitSentence = (sentence, word) => {
+  return sentence.split(new RegExp(`(${word})`, 'gi'));
+};
 
-const Highlight = ({ sentence, word, show }) => {
+const Highlight = ({ sentence, word, show, setShow }) => {
   const [parts, setParts] = useState([]);
-  const [displayText, setDisplayText] = useState(show);
 
   useEffect(() => {
     setParts(splitSentence(sentence, word));
@@ -18,19 +18,19 @@ const Highlight = ({ sentence, word, show }) => {
       );
       console.log('wwwww', partsWithWord);
       if (partsWithWord.length === 0) {
-        setDisplayText(false);
+        setShow(false);
         alert('Cannot highlight word in sentence.');
       } else if (partsWithWord.length > 2) {
         alert('Too many occurrences to be highlighted');
-        setDisplayText(false);
+        setShow(false);
       } else {
-        setDisplayText(show);
+        setShow(show);
       }
     }
   }, [parts, word, show]);
 
   return (
-    displayText && (
+    show && (
       <div className='highlighted-text'>
         <h3>
           {parts.map((part, i) => (

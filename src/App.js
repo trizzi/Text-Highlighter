@@ -33,6 +33,7 @@ function App() {
         sentence={sentence}
         word={word}
         show={show}
+        setShow={setShow}
       />
     </div>
   );

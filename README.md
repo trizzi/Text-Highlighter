@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/trizzi/Text-Highlighter/workflows/React/badge.svg)](https://github.com/trizzi/Text-Highlighter/actions)
+[![Checks](https://github.com/trizzi/Text-Highlighter/actions/workflows/pull_request_checks.yml/badge.svg)](https://github.com/trizzi/Text-Highlighter/actions/workflows/pull_request_checks.yml)
 
 # Table Of Content
 * Project Title

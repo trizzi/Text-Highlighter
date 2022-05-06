@@ -15,7 +15,7 @@ It is made up of two inputs and a button. The first input is where the sentence 
 # Project Image
 
 # How To Set It Up On Your Local Machine
-Clone this git repo: git clone https://github.com/trizzi/jhoor-coding-challange.git
+Clone this git repo: git clone https://github.com/trizzi/Text-Highlighter.git
 
 Get in the directory of the project
 

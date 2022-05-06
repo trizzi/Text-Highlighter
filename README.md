@@ -10,7 +10,14 @@ This is a small web app project that highlights texts that is present in the a g
 
 # Project Description
 As stated above, the text highligter highlights texts that is present in the a given sentence when the button is clicked. The project was made with react for frontend and jest for unit testing.
-It is made up of two inputs and a button. The first input is where the sentence goes and it can take a maximum of a hundred words. The sencond input accepts the word that needs to be highlighted. When the button is clicked, if the word/text in the second input is present in the sentence in the first input, that particular word is highlighted in yellow and capital letters. If the word/text in the second input is not present in the sentence of the first input, the broswer will display a pop-up "Cannot highlight word in sentence". If there are more than two occurence of the word/text, written in the second input, present in the sentence of the first input, the broswer will also display a pop-up saying "Too many occurrences to be highlighted".
+
+It is made up of two inputs and a button. The first input is where the sentence goes and it can take a maximum of a hundred words.
+
+The sencond input accepts the word that needs to be highlighted. When the button is clicked, if the word/text in the second input is present in the sentence in the first input, that particular word is highlighted in yellow and capital letters. 
+
+If the word/text in the second input is not present in the sentence of the first input, the broswer will display a pop-up "Cannot highlight word in sentence". 
+
+If there are more than two occurence of the word/text, written in the second input, present in the sentence of the first input, the broswer will also display a pop-up saying "Too many occurrences to be highlighted".
 
 # Project Image
 

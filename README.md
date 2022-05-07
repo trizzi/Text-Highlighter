@@ -22,6 +22,9 @@ If the word/text in the second input is not present in the sentence of the first
 If there are more than two occurence of the word/text, written in the second input, present in the sentence of the first input, the broswer will also display a pop-up saying "Too many occurrences to be highlighted".
 
 # Project Image
+![fd5H9C5uVy](https://user-images.githubusercontent.com/33966004/167270455-e3a8ef26-93bd-45a8-956e-72902e87c6a9.png)
+![hWCu91Bw7i](https://user-images.githubusercontent.com/33966004/167270459-4c18802a-26da-442d-a862-7826c288eb2f.png)
+
 
 # How To Set It Up On Your Local Machine
 Clone this git repo: git clone https://github.com/trizzi/Text-Highlighter.git

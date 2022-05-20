@@ -26,6 +26,7 @@ If there are more than two occurence of the word/text, written in the second inp
 ![hWCu91Bw7i](https://user-images.githubusercontent.com/33966004/167270459-4c18802a-26da-442d-a862-7826c288eb2f.png)
 
 
+
 # How To Set It Up On Your Local Machine
 Clone this git repo: git clone https://github.com/trizzi/Text-Highlighter.git
 
